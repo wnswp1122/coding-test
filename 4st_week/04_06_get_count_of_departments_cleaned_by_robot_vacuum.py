@@ -36,7 +36,7 @@ def get_count_of_departments_cleaned_by_robot_vacuum(r, c, d, room_map):
     m = len(room_map[0])
     count_of_departments_cleaned = 1  # 청소하는 칸의 개수
     room_map[r][c] = 2
-		queue = deque([[r, c, d]])
+    queue = deque([[r, c, d]])
 
     # 큐가 비어지면 종료
     while queue:
